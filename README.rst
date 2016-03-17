@@ -1,0 +1,1 @@
+This is a command linke Pip skeleton generator. To create a new pip module all you have to do is run generate_pip new <new_module_name>. The folder structure is pretty simple, you're going to be adding the beggining of your code to the src folder under <new_module_name>.py.

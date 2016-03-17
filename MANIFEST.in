@@ -1,0 +1,6 @@
+include LICENSE README.rst generate-runner.py
+recursive-include src *.py
+recursive-include src/generate *.py
+
+global-exclude *.pyc
+global-exclude .git

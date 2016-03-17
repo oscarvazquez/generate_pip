@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: generate-pip
+Version: 0.1.1
+Summary: PIP skeleton generator
+Home-page: https://github.com/oscarvazquez/chavo
+Author: Oscar Vazquez
+Author-email: oscar.vazquez2012@gmail.com
+License: UNKNOWN
+Description: This is a command linke Pip skeleton generator. To create a new pip module all you have to do is run generate_pip new <new_module_name>. The folder structure is pretty simple, you're going to be adding the beggining of your code to the src folder under <new_module_name>.py.
+Platform: UNKNOWN

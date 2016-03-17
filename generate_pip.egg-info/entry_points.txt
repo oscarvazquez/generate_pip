@@ -1,0 +1,3 @@
+[console_scripts]
+generate_pip = src.generate_pip:main
+

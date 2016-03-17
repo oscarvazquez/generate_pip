@@ -1,0 +1,16 @@
+MANIFEST.in
+README.rst
+generate-runner.py
+setup.py
+generate_pip.egg-info/PKG-INFO
+generate_pip.egg-info/SOURCES.txt
+generate_pip.egg-info/dependency_links.txt
+generate_pip.egg-info/entry_points.txt
+generate_pip.egg-info/top_level.txt
+src/__init__.py
+src/__main__.py
+src/generate_pip.py
+src/generate/__init__.py
+src/generate/osx.py
+src/generate/system.py
+src/generate/windows.py
