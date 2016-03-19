@@ -9,12 +9,12 @@ setup(
    name = "generate_pip",
    packages = find_packages(),
    entry_points = {
-       "console_scripts": ['generate_pip = src.generate_pip:main']
+       "console_scripts": ['start_pip = app.generate:main']
        },
-   version = '0.1.1',
+   version = '0.1.3',
    description = "PIP skeleton generator",
    long_description = long_descr,
    author = "Oscar Vazquez",
    author_email = "oscar.vazquez2012@gmail.com",
-   url = "https://github.com/oscarvazquez/chavo"
+   url = "https://github.com/oscarvazquez/generate_pip"
 )

@@ -1,6 +1,6 @@
-include LICENSE README.rst generate-runner.py
-recursive-include src *.py
-recursive-include src/generate *.py
+include LICENSE README.rst generate_pip-runner.py
+
+recursive-include app/contructor *.py
 
 global-exclude *.pyc
 global-exclude .git
