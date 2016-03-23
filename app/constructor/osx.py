@@ -13,15 +13,25 @@ class osx_setup:
 		os.system('cd ' + self.project_name)
 		self.setup_file()
 		self.runner_file()
-		os.system('touch ' + self.project_name + '/MANIFEST.in')
+		self.manifest_file()
 		os.system('touch ' + self.project_name + '/README.rst')
+		os.system('touch LICENSE')
 		self.src()
+
 
 	def setup_file(self):
 		os.system('touch ' + self.project_name + '/setup.py')
 		setup = open(self.project_name + '/setup.py', 'w')
 		setup.write('import re\nfrom setuptools import setup, find_packages\n\nwith open("README.rst", "rb") as f:\n\tlong_descr = f.read().decode("utf-8")\n\nsetup(\n\tname = "{app_name}",\n\tpackages = find_packages(),\n\tentry_points = {console_script},\n\tversion = version,\n\tdescription = "",\n\tlong_description = long_descr,\n\tauthor = "",\n\tauthor_email = "",\n\turl = ""\n)'.format(location='src/' + self.project_name + '.py', app_name=self.project_name, console_script='{\n \t\t\t"console_scripts": ["' + self.project_name +' = src.'+ self.project_name +':main"]\n\t\t}'))
 		setup.close()
+
+	def manifest_file(self):
+		os.system('touch ' + self.project_name + '/MANIFEST.in')
+		manifest = open(self.project_name + '/MANIFEST.in', 'w')
+		manifest.write('include LICENSE README.rst '+ self.project_name +'-runner.py')
+		manifest.write('recursive-exclude *.pyc\n')
+		manifest.write('recursive-exclude *.git\n')
+
 
 	def runner_file(self):
 		os.system('touch ' + self.project_name + '/' + self.project_name + '-runner.py')
