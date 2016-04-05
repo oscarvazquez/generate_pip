@@ -11,7 +11,7 @@ setup(
    entry_points = {
        "console_scripts": ['start_pip = app.generate:main']
        },
-   version = '0.1.4',
+   version = '0.1.5',
    description = "PIP skeleton generator",
    long_description = long_descr,
    author = "Oscar Vazquez",

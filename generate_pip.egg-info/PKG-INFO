@@ -1,6 +1,6 @@
 Metadata-Version: 1.0
 Name: generate-pip
-Version: 0.1.4
+Version: 0.1.5
 Summary: PIP skeleton generator
 Home-page: https://github.com/oscarvazquez/generate_pip
 Author: Oscar Vazquez
